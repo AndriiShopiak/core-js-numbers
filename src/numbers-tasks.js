@@ -641,8 +641,17 @@ function getHypotenuse(a, b) {
  * 10 => 5
  * 15 => 8
  */
-function getCountOfOddNumbers(/* number */) {
-  throw new Error('Not implemented');
+function getCountOfOddNumbers(number) {
+  let sum = 0;
+  // eslint-disable-next-line no-undef, no-plusplus
+  for (i = 0; i <= Math.abs(number); i++) {
+    // eslint-disable-next-line no-undef, eqeqeq
+    if (i % 2 == 1) {
+      // eslint-disable-next-line no-unused-vars, no-undef
+      sum += i / i;
+    }
+  }
+  return sum;
 }
 
 module.exports = {
